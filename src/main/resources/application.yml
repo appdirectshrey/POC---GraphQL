@@ -1,5 +1,8 @@
 server:
   port: 8005
+  error:
+    include-stacktrace: never
+    include-exception: true
 spring:
   data:
     mongodb:

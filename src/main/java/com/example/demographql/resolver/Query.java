@@ -17,11 +17,9 @@ public class Query implements GraphQLQueryResolver {
   }
 
   public Book findBookById(long id) {return bookRepository.findById(id).get();}
-
   public Iterable<Book> findAllBooks() {
     return bookRepository.findAll();
   }
-
   public Iterable<Author> findAllAuthors() {
     return authorRepository.findAll();
   }
